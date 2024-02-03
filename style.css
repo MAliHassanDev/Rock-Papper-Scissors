@@ -47,16 +47,11 @@ h1{
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
   transition: transform .3s ease;
 }
-.button-container button:active{
-  border: 3px solid white;
-  box-shadow: inset 0px 0px 0px 2px black;
-}
+
 .button-container button:hover{
   transform: scale(1.1);
 }
-.button-container button:active  img{
-  width: 56%;
-}
+
 button img{
   width: 60%;
   object-fit: 100% 100%;
@@ -209,8 +204,14 @@ button img{
     min-width: 300px;
     margin: 10px;
   }
+  .button-container button{
+    transition: all .1s ease;
+  }
   .button-container button:hover{
     transform: scale(1);
+  }
+  .button-container button:active{
+    transform: scale(.98);
   }
   h1{
     font-size: 3rem;
