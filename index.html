@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <section id="game-container" class="">
+      <h1>Rock Papers Scissors</h1>
+      <div class="button-container">
+        <button id="rock"><img src="img/rock.png" alt=""></button>
+        <button id="paper"><img src="img/paper.png" alt=""></button>
+        <button id="scissors"><img src="img/scissors.png" alt=""></button>
+      </div>
+      <div class="viewResultContainer hidden">
+        <p id="result"></p>
+        <div class="viewResult">
+          <div class="userChoiceContainer">
+            <p>You <span>Picked</span>: </p>
+            <img src="" alt="" id="userChoice">
+          </div>
+          <div class="computerChoiceContainer">
+            <p>Alex Picked: </p>
+            <span id="computerPickText"></span>
+            <img src="" alt="" id="computerChoice">
+          </div>
+        </div>
+       <button id="tryAgainButton">Try Again</button>
+      </div>
+      <div class="score-container">
+        <div class="container">
+          <h3>Score: </h3>
+          <span id="scoreValue">0</span>
+        </div>
+        <button id="resetButton">Reset Score</button>
+      </div>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

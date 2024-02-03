@@ -1,0 +1,262 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+        
+
+body{
+  background-color: #d0dfff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  font-family: "Teko", sans-serif;
+}
+
+#game-container{
+  border: 5px solid #8c7a20;
+  padding: 20px 30px 30px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 650px;
+  align-items: center;
+  background-color: white;
+}
+h1{
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 35px;
+}
+.button-container{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  
+}
+.button-container button{
+  height: 150px;
+  width: 150px;
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #ffea00;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.336);
+  transition: transform .3s ease;
+}
+.button-container button:active{
+  border: 3px solid white;
+  box-shadow: inset 0px 0px 0px 2px black;
+}
+.button-container button:hover{
+  transform: scale(1.1);
+}
+.button-container button:active  img{
+  width: 56%;
+}
+button img{
+  width: 60%;
+  object-fit: 100% 100%;
+}
+#rock{
+  background-color: #1ba698;
+}
+#paper{
+  background-color: #d91438;
+}
+#scissors{
+  background-color: #afbf34;
+}
+.score-container{
+  padding: 0px 25px;
+  align-self: center;
+  justify-self: flex-end;
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  margin-right: 18px;
+  margin-top: 60px;
+}
+.container{
+  width: 117px;
+  background-color:#049dd9;
+  color: white;
+  border: 2px solid black;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px 10px 4px 11px;
+}
+.container h3{
+  font-size: 28px;
+  margin-right: 5px;
+}
+.container span{
+  font-size: 28px;
+}
+#resetButton{
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 21px;
+  font-family: "Teko", sans-serif;
+  background-color:#ffea00e0;
+  color: black;
+  cursor:pointer;
+  align-self: center;
+  border: 2px solid Black;
+  letter-spacing: 1px;
+}
+#resetButton:hover{
+  box-shadow: none;
+  border: 2px solid black;
+}
+#resetButton:active{
+  transform: scale(.9)
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+/* .showResult button{
+  display:none; 
+} */
+
+.viewResultContainer{
+  align-self: center;
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.viewResult {
+  align-self: center;
+  column-gap: 50px;
+  display: flex;
+  max-width: 80%;
+  justify-content: space-between;
+}
+.viewResult p{
+  font-size: 22px;
+  font-weight: 500;
+}
+.userChoiceContainer,
+.computerChoiceContainer{
+  display: flex;
+  align-items: center;
+}
+.userChoiceContainer img,
+.computerChoiceContainer img{
+  width: 50px;
+  margin-left: 10px;
+}
+#result{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+#tryAgainButton{
+  height: auto;
+  width: auto;
+  padding: 7px 13px;
+  font-size: 19px;
+  margin-top: 25px;
+  font-weight: 500;
+  background-color: #7a54a5;
+  color: white;
+  border-radius: 20px;
+  margin-right: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color .3s ease;
+
+}
+#tryAgainButton:active{
+  transform: scale(.9);
+}
+#tryAgainButton:hover{
+  background-color: #623596;
+}
+#computerPickText{
+  font-size: 24px;
+  margin-left: 10px;
+  justify-self: flex-end;
+  width: 10px;
+}
+.showResult .button-container button{
+  pointer-events: none;
+}
+
+.hidden{
+  display:none;
+}
+
+
+
+
+@media screen and (max-width:700px){
+  #game-container{
+    padding: 20px 20px 20px 20px;
+    min-width: 300px;
+    margin: 10px;
+  }
+  .button-container button:hover{
+    transform: scale(1);
+  }
+  h1{
+    font-size: 3rem;
+  }
+  .button-container{
+    width: 100%;
+  }
+  .button-container button{
+    height: 120px; 
+    width: 120px;
+  }
+  .score-container{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:480px){
+  #game-container{
+    padding: 20px 12px 20px 12px;
+    margin: 20px;
+  }
+  h1{
+    margin-bottom: 25px;
+    line-height: 50px;
+  }
+  .button-container button{
+    height: 95px;
+    width: 95px;
+  }
+  .score-container{
+    padding: 0px;
+    margin-right: 0px;
+    margin-top: 40px;
+  }
+  .viewResult{
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    column-gap: 40px;
+  }
+}
+
+@media screen and (max-width:380px){ 
+  .button-container button{
+    height: 85px;
+    width: 85px;
+  }
+}
