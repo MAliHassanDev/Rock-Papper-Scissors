@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   function generateComputerChoice() {
     const gameOptions = ['rock','paper','scissors'];
-    let randomIndice = Math.floor(Math.random()*gameOptions.length);
-    return gameOptions[randomIndice];
+    let randomIndex = Math.floor(Math.random()*gameOptions.length);
+    return gameOptions[randomIndex];
   }
   function addImageElement(userChoice, computerChoice){
     computerPick.src = `img/${computerChoice}.png`
@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     userPick.src = `img/${userChoice}.png`;
     let count = 3;
     console.log(count);
-    // computerPickText.innerHTML = count;
     const countDownInterval = setInterval(() =>{
       if(count>0){
         computerPickText.innerHTML = count;
