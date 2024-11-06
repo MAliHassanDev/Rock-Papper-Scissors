@@ -3,7 +3,7 @@ A web based rock paper scissors game with AI mode.
 
 ## [Live Preview](https://malihassandev.github.io/Rock-Papper-Scissors/)
 
-![Rock Paper Scissors Project demo picture](img/projectDemoImage.png)
+![Rock Paper Scissors Project demo picture](img/projectDempPicture2.png)
 
 ## Features
 - Play against AI
